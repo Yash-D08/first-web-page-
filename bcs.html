@@ -4,6 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Year Computer Science</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FF6347; /* Vibrant red color */
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        header, section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            transition: transform 0.3s ease-in-out;
+            animation: scaleUp 1s ease-out;
+        }
+
+        header:hover, section:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            position: relative;
+            animation: slideUp 1s ease-out;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            width: 60%;
+            height: 4px;
+            background-color: #FF6347; /* Red underline */
+            bottom: -5px;
+            left: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 4px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        li:hover {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            transform: translateX(10px);
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.95);
+                opacity: 0.5;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            header, section {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
 
